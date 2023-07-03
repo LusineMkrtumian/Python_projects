@@ -7,6 +7,6 @@ data = [['2015', 'Bajirao Mstani', '7.2', '17362', 'Dramma', '158', 'Sanjay Leel
         ['2013', 'Bhaag Mikha Bhaag', '8.3', '39731', 'Dramma', '186', 'Rakeysh omprakash'],
         ['2012', 'Barfi!', '8.2', '52308', 'Familiy', '151', 'Anurag Basu']]
 
-df = pd.DataFrame(data=data, index=None, columns=columns, dtype=None, copy=None)
+df = pd.DataFrame(data=data, columns=columns)
 
 print(df.loc[df['Genre'] == 'Dramma'])
