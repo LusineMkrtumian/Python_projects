@@ -10,4 +10,3 @@ data = [['2015', 'Bajirao Mstani', 7.2, 17362, 'Dramma', 158, 'Sanjay Leela Bham
 df = pd.DataFrame(data=data, columns=columns)
 df_dramma = df.loc[df['Genre'] == 'Dramma']
 print(df_dramma['Rating'].mean())  # 7.966666666666668
-
