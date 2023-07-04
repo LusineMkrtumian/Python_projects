@@ -21,3 +21,7 @@ print(stars_sys)
 print(stars_sys.index)  # Index(['Альфа Центавра', 'Звезда Бернарда', 'Луман 16', 'WISE 0855', 'Вольф','Лаланд'], dtype='object')
 print(stars_sys['Звезда Бернарда'])  # 5.963
 print(stars_sys[['Звезда Бернарда', 'Лаланд']])
+stars_sys['Звезда Бернарда'] = -1
+print(stars_sys[(stars_sys > 0)])
+stars_sys.name = 'Расстояния [световых лет]'
+stars_sys.index.name = 'Звезды, звездные системы и субзвезды'
